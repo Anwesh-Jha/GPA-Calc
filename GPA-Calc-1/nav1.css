@@ -1,0 +1,147 @@
+
+
+.bg-black {
+    background-color: #000;
+}
+
+#logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.navbar-brand {
+    padding: 6px 20px;
+    font-size: 16px;
+}
+
+.navbar-nav {
+    width: 100%;
+}
+
+.nav-item {
+    padding: 0px 8px;
+    margin: 0px 3px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.nav-item.active {
+    background-color: #9E9E9E;
+}
+
+.nav-item:hover {
+    background-color: #9E9E9E;
+}
+
+.nav-link {
+    padding: 5px;
+}
+
+.navbar-collapse.collapse.in {
+    display: block !important;
+}
+
+.fa {
+    padding-right: 10px;
+}
+
+.dropdown-toggle {
+    color: gray;
+    padding: 3px 10px;
+    position: absolute;
+}
+
+.dropdown-toggle:hover {
+    color: #fff;
+}
+
+.dropdown-menu {
+    margin-left: 15px;
+    width: 120px;
+    margin-top: 0px; 
+}
+
+.dropdown-item:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+@media (max-width: 576px) {
+    .nav-item {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #ff9d00, #ffd700, #ff5f6d, #ffc371);
+    background-size: 300% 300%;
+    animation: backgroundFlow 6s ease infinite;
+    color: #fff;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: glowingText 3s ease-in-out infinite;
+    text-align: center;
+    color: #fff;
+}
+
+.gpa-calc {
+    padding: 30px 20px;
+}
+
+.gpa-calc .container {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+h4 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #ffd700;
+    text-shadow: 0 0 8px rgba(255, 215, 0, 0.8);
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    padding: 8px 10px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: rgba(255, 215, 0, 0.8);
+    background: rgba(255, 255, 255, 0.9);
+    color: #000;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 1);
+}
+
+@keyframes backgroundFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes glowingText {
+    0% { text-shadow: 0 0 5px #ff9d00, 0 0 10px #ffd700, 0 0 20px #ff9d00; }
+    50% { text-shadow: 0 0 20px #ffd700, 0 0 30px #ff9d00, 0 0 40px #ffd700; }
+    100% { text-shadow: 0 0 5px #ff9d00, 0 0 10px #ffd700, 0 0 20px #ff9d00; }
+}
